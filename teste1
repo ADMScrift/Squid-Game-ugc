@@ -60,19 +60,6 @@ SquidTab:AddButton({
       end
 })
 
-SquidTab:AddButton({
-    Name = "Teleportar para 1 canto",
-    Callback = function()
-		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(234.0895538330078, 64.3855209350586, -1320.239501953125)
-      end
-})
-
-SquidTab:AddButton({
-    Name = "Teleportar para 1 canto",
-    Callback = function()
-		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(234.0895538330078, 64.3855209350586, -1320.239501953125)
-      end
-})
 
 SquidTab:AddButton({
     Name = "Auto Tap Mihh",
