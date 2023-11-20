@@ -87,3 +87,17 @@ SquidTab:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Squid-Game-ugc/main/Auto%20bater%20ADM"))()
       end
 })
+
+SquidTab:AddButton({
+    Name = "Auto Tap ADM",
+    Callback = function()
+		--Paste this individually
+		--Do not copy everything or it will break
+ 
+		--GUI script
+		loadstring(game:HttpGet("https://pastebin.com/raw/GdmzzrDz", true))()
+ 
+		--Teleport script
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(COORDINATESHERE)
+      end
+})
