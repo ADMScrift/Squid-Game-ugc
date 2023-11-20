@@ -33,7 +33,7 @@ SquidTab:AddButton({
 })
 
 SquidTab:AddButton({
-    Name = "Teleportar para o Boneca npc",
+    Name = "Teleportar para o Boneca",
     Callback = function()
 		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1364.931884765625, 60.779151916503906, -53.26866912841797)
       end
@@ -53,9 +53,3 @@ SquidTab:AddButton({
       end
 })
 
-SquidTab:AddButton({
-    Name = "Teleportar para o 1 npc",
-    Callback = function()
-		ame.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(319.0860595703125, 94.47726440429688, -1071.41357421875)
-      end
-})
