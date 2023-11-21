@@ -56,35 +56,8 @@ SquidTab:AddButton({
 SquidTab:AddButton({
     Name = "Teleportar para o 3 npc",
     Callback = function()
-		ame.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(319.0860595703125, 94.47726440429688, -1071.41357421875)
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(316.2088928222656, 158.47726440429688, -1071.7008056640625)
       end
 })
 
 
-SquidTab:AddButton({
-    Name = "Auto Tap Mihh",
-    Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Squid-Game-ugc/main/auto%20bater"))()
-      end
-})
-
-SquidTab:AddButton({
-    Name = "Auto Tap ADM",
-    Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Squid-Game-ugc/main/Auto%20bater%20ADM"))()
-      end
-})
-
-SquidTab:AddButton({
-    Name = "Coordenada",
-    Callback = function()
-		--Paste this individually
-		--Do not copy everything or it will break
- 
-		--GUI script
-		loadstring(game:HttpGet("https://pastebin.com/raw/GdmzzrDz", true))()
- 
-		--Teleport script
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(COORDINATESHERE)
-      end
-})
