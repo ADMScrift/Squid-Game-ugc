@@ -1,0 +1,49 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+local Window = OrionLib:MakeWindow({Name = "UGC FARM", HidePremium = false, SaveConfig = true, ConfigFolder = "."})
+
+
+OrionLib:MakeNotification({
+	Name = ">-<!",
+	Content = "Lista ugc Script",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local FarmTab = Window:MakeTab({
+	Name = "Farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+FarmTab:AddButton({
+    Name = "Moeda e gemas ",
+    Callback = function()
+        _G.auto = true while true do wait(0.00000001) if _G.auto == true then local args = { [1] = "Collect", [2] = { [1] = 1350, [2] = 15.972000000000207 } } game:GetService("ReplicatedStorage"):WaitForChild("F"):WaitForChild("RE"):FireServer(unpack(args)) end end
+      end
+})
+
+FarmTab:AddButton({
+    Name = "Rejoin",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/FPS/main/rejoin"))()
+
+ 	end    
+ })
+
+
+
+local LeiaTab = Window:MakeTab({
+	Name = "Leia",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+LeiaTab:AddLabel("Quanto mais vc clica mais moeda e gemas ganhara")
+LeiaTab:AddLabel("Mas causara Lag")
+LeiaTab:AddLabel("Obs: Depois de um tempo as moedas diminuirão")
+LeiaTab:AddLabel("Para voltar a ganhar mais clique em rejoin")
+LeiaTab:AddLabel("E execute o script novamente")
