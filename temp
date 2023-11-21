@@ -1,0 +1,26 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+local Window = OrionLib:MakeWindow({Name = "Squid Game X", HidePremium = false, SaveConfig = true, ConfigFolder = "🔴Blade Ball🔴"})
+
+
+OrionLib:MakeNotification({
+	Name = "UGC",
+	Content = "Lista ugc Script",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local MoneyTab = Window:MakeTab({
+	Name = "Money",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+MoneyTab:AddButton({
+    Name = "Pegar Moedas",
+    Callback = function()
+      _G.auto = true while true do wait(0.00000001) if _G.auto == true then game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunctions"):WaitForChild("ClaimReward"):InvokeServer() end end
+      end
+})
+
