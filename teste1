@@ -16,8 +16,7 @@ local FarmTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-FarmTab:AddLabel("Quanto mais vc clica mais moeda e gemas ganhara")
-FarmTab:AddLabel("Mas causara Lag")
+
 
 
 FarmTab:AddButton({
@@ -35,6 +34,16 @@ FarmTab:AddButton({
  	end    
  })
 
- FarmTab:AddLabel("Obs: Depois de um tempo as moedas diminuirão")
- FarmTab:AddLabel("Para voltar a ganhar mais clique em rejoin")
- FarmTab:AddLabel("E execute o script novamente")
+
+
+local LeiaTab = Window:MakeTab({
+	Name = "Leia",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+LeiaTab:AddLabel("Quanto mais vc clica mais moeda e gemas ganhara")
+LeiaTab:AddLabel("Mas causara Lag")
+LeiaTab:AddLabel("Obs: Depois de um tempo as moedas diminuirão")
+LeiaTab:AddLabel("Para voltar a ganhar mais clique em rejoin")
+LeiaTab:AddLabel("E execute o script novamente")
