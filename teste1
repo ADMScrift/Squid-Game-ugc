@@ -1,90 +1,40 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 
-local Window = OrionLib:MakeWindow({Name = "Squid Game X", HidePremium = false, SaveConfig = true, ConfigFolder = "🔴Blade Ball🔴"})
+local Window = OrionLib:MakeWindow({Name = "UGC FARM", HidePremium = false, SaveConfig = true, ConfigFolder = "🔴Blade Ball🔴"})
 
 
 OrionLib:MakeNotification({
-	Name = "Squid Game X UGC!",
+	Name = ">-<!",
 	Content = "Lista ugc Script",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
-local SquidTab = Window:MakeTab({
-	Name = "Squid",
+local FarmTab = Window:MakeTab({
+	Name = "Farm",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+FarmTab:AddLabel("Quanto mais vc clica mais moeda e gemas ganhara")
+FarmTab:AddLabel("Mas causara Lag")
 
-SquidTab:AddButton({
-    Name = "Teleportar para o circulo",
+
+FarmTab:AddButton({
+    Name = "Moeda e gemas ",
     Callback = function()
-		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(68.62367248535156, 73.06071472167969, -1033.69482421875)
+        _G.auto = true while true do wait(0.00000001) if _G.auto == true then local args = { [1] = "Collect", [2] = { [1] = 1350, [2] = 15.972000000000207 } } game:GetService("ReplicatedStorage"):WaitForChild("F"):WaitForChild("RE"):FireServer(unpack(args)) end end
       end
 })
 
+FarmTab:AddButton({
+    Name = "Rejoin",
+    Callback = function()  ----script logo abaixo:arrow_down::arrow_down::arrow_down:-----
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/FPS/main/rejoin"))()
 
-SquidTab:AddButton({
-    Name = "Teleportar para o 1 npc",
-    Callback = function()
-		ame.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(319.0860595703125, 94.47726440429688, -1071.41357421875)
-      end
-})
+ 	end    
+ })
 
-SquidTab:AddButton({
-    Name = "Teleportar para o Boneca npc",
-    Callback = function()
-		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1364.931884765625, 60.779151916503906, -53.26866912841797)
-      end
-})
-
-SquidTab:AddButton({
-    Name = "Teleportar para o 2 npc",
-    Callback = function()
-		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(317.7588806152344, 126.47724914550781, -1071.08447265625)
-      end
-})
-
-SquidTab:AddButton({
-    Name = "Teleportar para 1 canto",
-    Callback = function()
-		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(234.0895538330078, 64.3855209350586, -1320.239501953125)
-      end
-})
-
-SquidTab:AddButton({
-    Name = "Teleportar para o 3 npc",
-    Callback = function()
-		ame.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(319.0860595703125, 94.47726440429688, -1071.41357421875)
-      end
-})
-
-
-SquidTab:AddButton({
-    Name = "Auto Tap Mihh",
-    Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Squid-Game-ugc/main/auto%20bater"))()
-      end
-})
-
-SquidTab:AddButton({
-    Name = "Auto Tap ADM",
-    Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Squid-Game-ugc/main/Auto%20bater%20ADM"))()
-      end
-})
-
-SquidTab:AddButton({
-    Name = "Auto Tap ADM",
-    Callback = function()
-		--Paste this individually
-		--Do not copy everything or it will break
- 
-		--GUI script
-		loadstring(game:HttpGet("https://pastebin.com/raw/GdmzzrDz", true))()
- 
-		--Teleport script
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(COORDINATESHERE)
-      end
-})
+ FarmTab:AddLabel("Obs: Depois de um tempo as moedas diminuirão")
+ FarmTab:AddLabel("Para voltar a ganhar mais clique em rejoin")
+ FarmTab:AddLabel("E execute o script novamente")
