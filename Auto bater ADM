@@ -1,8 +1,0 @@
-_G.auto = true
-
-while true do
-    wait(0.00000001)
-    if _G.auto == true then
-        workspace:WaitForChild("Map"):WaitForChild("TugOfWar"):WaitForChild("Remotes"):WaitForChild("fasfddada3"):FireServer()
-    end
-end
