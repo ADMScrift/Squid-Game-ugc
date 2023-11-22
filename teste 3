@@ -26,8 +26,6 @@ Fase5Tab:AddButton({
 })
 
 
-
-
 local Fase1Tab = Window:MakeTab({
 	Name = "1 Fase",
 	Icon = "rbxassetid://4483345998",
