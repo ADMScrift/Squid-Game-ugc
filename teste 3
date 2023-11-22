@@ -153,6 +153,3 @@ Fase5Tab:AddButton({
 
 
 
-
---win
-game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-186.3017120361328, 30.787513732910156, 97.94772338867188)
