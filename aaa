@@ -40,24 +40,11 @@ Fase1Tab:AddButton({
 })
 
 
-Fase1Tab:AddButton({
-    Name = "250 de força",
-    Callback = function()
-		_G.auto = true while true do wait(0.00000001) if _G.auto == true then local args = { [1] = workspace:WaitForChild("Mundos"):WaitForChild("Mundo 1"):WaitForChild("Zona 1"):WaitForChild("TrainingObjects"):WaitForChild("Madera"):WaitForChild("Meshes/untitled_Cube.002") } game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Hit"):FireServer(unpack(args)) end end
-      end
-})
 
 local Fase2Tab = Window:MakeTab({
 	Name = "2 Fase",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})
-
-Fase2Tab:AddButton({
-    Name = "0 de força",
-    Callback = function()
-		_G.auto = true while true do wait(0.00000001) if _G.auto == true then local args = { [1] = workspace:WaitForChild("Mundos"):WaitForChild("Mundo 1"):WaitForChild("Zona 2"):WaitForChild("TrainingObjects"):WaitForChild("Palo"):WaitForChild("Meshes/untitled_Cube.002") } game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Hit"):FireServer(unpack(args)) end end
-      end
 })
 
 
@@ -134,6 +121,4 @@ Fase5Tab:AddButton({
 		_G.auto = true while true do wait(0.00000001) if _G.auto == true local args = { [1] = workspace:WaitForChild("Mundos"):WaitForChild("Mundo 1"):WaitForChild("Zona 5"):WaitForChild("TrainingObjects"):WaitForChild("Madera"):WaitForChild("Meshes/untitled_Cube.001") } game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Hit"):FireServer(unpack(args)) end end
       end
 })
-
-
 
