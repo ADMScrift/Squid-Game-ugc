@@ -1,0 +1,50 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+local Window = OrionLib:MakeWindow({Name = "Bacon Boss", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+ 
+local BlippiTab = Window:MakeTab({
+	Name = "Blippi",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+BlippiTab:AddButton({
+	Name = "Bone mission colect",
+	Callback = function()
+        local args = { [1] = "FTUE", [2] = 2, [3] = 1 } game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.3"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("DinoDigService"):WaitForChild("RF"):WaitForChild("RedeemReward"):InvokeServer(unpack(args))
+  	end    
+})
+
+
+
+BlippiTab:AddButton({
+	Name = "Teleport to Blippi",
+	Callback = function()
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(385.43572998046875, 7.363542556762695, 1679.8218994140625)
+  	end    
+})
+
+BlippiTab:AddButton({
+	Name = "Mission Find the cat",
+	Callback = function()
+        local args = { [1] = "FindTabbs" } game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.3"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("NPCService"):WaitForChild("RE"):WaitForChild("StartQuestFromDialogue"):FireServer(unpack(args))
+  	end    
+})
+
+BlippiTab:AddButton({
+	Name = "Teleport to cat",
+	Callback = function()
+        game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(246.79026794433594, -2.214348316192627, 1677.125732421875)
+  	end    
+})
+
+
+BlippiTab:AddButton({
+	Name = "End mission",
+	Callback = function()
+        local args = { [1] = "TabbsBlippi", [2] = "FindTabbs", [3] = { ["TALK"] = "TabbsBlippi" } } game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.5.3"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("NPCService"):WaitForChild("RE"):WaitForChild("UpdateQuestFromDialogue"):FireServer(unpack(args))
+  	end    
+})
