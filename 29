@@ -1,4 +1,4 @@
---loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Testes/main/28"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Testes/main/29"))()
 
 --Load
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
@@ -71,5 +71,12 @@ local Window = Rayfield:CreateWindow({
    Name = "Auto Rebirh",
    Callback = function()
       _G.a1uto = true  while true do     wait(1)     if _G.a1uto == true then       local args = {   [1] = 1 }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("RebirthService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnRebirthRequest"):InvokeServer(unpack(args))     end end
+   end,
+})
+
+local Button = HubsTab:CreateButton({
+   Name = "Auto Spin",
+   Callback = function()
+      _G.a1uto = true  while true do     wait(5)     if _G.a1uto == true then       local args = {   [1] = 1 }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("WheelService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnSpinRequest"):InvokeServer()     end end
    end,
 })
