@@ -48,14 +48,15 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Toggle = FPSTab:CreateToggle({
-  Name = "Toggle Example",
+  Name = "Test",
   CurrentValue = false,
   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-  Callback = function(true)
+  Callback = function(Value)
     _G.auto = true  while true do     wait(0.00000001)     if _G.auto == true then       game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("SwordService"):WaitForChild("__comm__"):WaitForChild("RE"):WaitForChild("OnClickRequest"):FireServer()     end end
-      else
-        _G.auto = false
+  else
+    _G.auto = false
   end,
 })
+
 
  
