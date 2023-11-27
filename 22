@@ -1,0 +1,68 @@
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Script-Creator/main/Hub"))()
+
+--Load
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+--Window
+local Window = Rayfield:CreateWindow({
+    Name = "💣Create Script💣",
+    LoadingTitle = "Deleted Account",
+    LoadingSubtitle = "by Deleted",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Big Hub"
+    },
+    Discord = {
+       Enabled = True,
+       Invite = "https://discord.gg/MYH3uxzz7m", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Blox",
+       Subtitle = "Key System",
+       Note = "Key em: https://discord.gg/MYH3uxzz7m",
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"DeletedScriptsV?"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+
+ local HubsTab = Window:CreateTab("Hubs", 4483362458) -- Title, Image
+
+
+ local FPSTab = Window:CreateTab("FPS", 4483362458) -- Title, Image
+
+ Rayfield:Notify({
+    Title = "Olá",
+    Content = "Este Hub tem varios scripts de Blox Fruit",
+    Duration = 6.5,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Okay!",
+          Callback = function()
+          print("The user tapped Okay!")
+       end
+    },
+ },
+ })
+
+
+
+
+ local Button = HubsTab:CreateButton({
+    Name = "Auto click",
+    Callback = function()
+      _G.auto = true  while true do     wait(0.00000001)     if _G.auto == true then       game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("SwordService"):WaitForChild("__comm__"):WaitForChild("RE"):WaitForChild("OnClickRequest"):FireServer()     end end
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Farm",
+    Callback = function()
+      _G.auto = true  while true do     wait(22)     if _G.auto == true then       game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-13.382424354553223, 178.50901794433594, 283.5121765136719) wait(10) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-24.435039520263672, 177.9485626220703, 270.4065246582031) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-13.382424354553223, 178.50901794433594, 283.5121765136719) wait(10) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-24.435039520263672, 177.9485626220703, 270.4065246582031) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-13.382424354553223, 178.50901794433594, 283.5121765136719)     end end
+    end,
+ })
