@@ -1,0 +1,1 @@
+_G.a4uto = true  while true do     wait(5)     if _G.a4uto == true then       game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("PetService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnEquipBestPetsRequest"):InvokeServer()
