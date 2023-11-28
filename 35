@@ -94,10 +94,3 @@ local Button = HubsTab:CreateButton({
    end,
 })
 
-
-local Button = HubsTab:CreateButton({
-   Name = "Auto Poção",
-   Callback = function()
-      _G.a5uto = true  while true do     wait(5)     if _G.a5uto == true then       local args = {   [1] = "CoinsPotion" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("PlayerService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnPotionUseRequest"):InvokeServer(unpack(args)) wait(0.1) local args = {   [1] = "SwordPotion" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("PlayerService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnPotionUseRequest"):InvokeServer(unpack(args)) wait(0.1) local args = {   [1] = "LegendsPotion" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("PlayerService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnPotionUseRequest"):InvokeServer(unpack(args))
-   end,
-})
