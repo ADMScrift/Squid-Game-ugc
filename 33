@@ -1,0 +1,102 @@
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Testes/main/29"))()
+
+--Load
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+--Window
+local Window = Rayfield:CreateWindow({
+    Name = "💣Create Script💣",
+    LoadingTitle = "Deleted Account",
+    LoadingSubtitle = "by Deleted",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Big Hub"
+    },
+    Discord = {
+       Enabled = True,
+       Invite = "https://discord.gg/MYH3uxzz7m", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Blox",
+       Subtitle = "Key System",
+       Note = "Key em: https://discord.gg/MYH3uxzz7m",
+       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"DeletedScriptsV?"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+
+
+ local HubsTab = Window:CreateTab("Hubs", 4483362458) -- Title, Image
+
+
+
+ Rayfield:Notify({
+    Title = "Olá",
+    Content = "Este Hub tem varios scripts de Blox Fruit",
+    Duration = 6.5,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Okay!",
+          Callback = function()
+          print("The user tapped Okay!")
+       end
+    },
+ },
+ })
+
+
+
+
+ local Button = HubsTab:CreateButton({
+    Name = "Auto click",
+    Callback = function()
+      _G.auto = true  while true do     wait(0.00000001)     if _G.auto == true then       game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("SwordService"):WaitForChild("__comm__"):WaitForChild("RE"):WaitForChild("OnClickRequest"):FireServer()     end end
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Auto Farm",
+    Callback = function()
+      _G.auto1 = true  while true do     wait(6)     if _G.auto1 == true then       game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-13.646517753601074, 178.50306701660156, 283.3878173828125) wait(10) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-6.094387531280518, 177.94790649414062, 270.7273254394531) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-14.431011199951172, 178.07666015625, 266.7210388183594)     end end
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+   Name = "Auto Rebirh",
+   Callback = function()
+      _G.a1uto = true  while true do     wait(1)     if _G.a1uto == true then       local args = {   [1] = 1 }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("RebirthService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnRebirthRequest"):InvokeServer(unpack(args))     end end
+   end,
+})
+
+local Button = HubsTab:CreateButton({
+   Name = "Auto Spin",
+   Callback = function()
+      _G.a2uto = true  while true do     wait(5)     if _G.a2uto == true then       local args = {   [1] = 1 }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("WheelService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnSpinRequest"):InvokeServer()     end end
+   end,
+})
+
+local Button = HubsTab:CreateButton({
+   Name = "Auto Colect Gifts",
+   Callback = function()
+      _G.a3uto = true  while true do     wait(5)     if _G.a3uto == true then       local args = {   [1] = 1 }  local args = { [1] = "Gift1" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift2" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift3" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift4" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift5" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift6" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift7" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift8" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift9" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift10" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) wait(0.1) local args = { [1] = "Gift11" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args)) local args = { [1] = "Gift12" } game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("GiftsService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnGiftClaimRequest"):InvokeServer(unpack(args))     end end
+   end,
+})
+
+local Button = HubsTab:CreateButton({
+   Name = "ALL CODES",
+   Callback = function()
+      local args = {   [1] = "RELEASE" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "Members10k" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "sorryconsole" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "iLovePets" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "mergeanimelegends" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "ilovelegends" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "legendslegends" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "Coins5min" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "StrongSword" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args)) wait(0.01) local args = {   [1] = "animeanime" }  game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("CodesService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnCodeRedeemRequest"):InvokeServer(unpack(args))
+   end,
+})
+
+local Button = HubsTab:CreateButton({
+   Name = "Melhor Pet",
+   Callback = function()
+      _G.a4uto = true  while true do     wait(5)     if _G.a4uto == true then       game:GetService("ReplicatedStorage"):WaitForChild("src"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("PetService"):WaitForChild("__comm__"):WaitForChild("RF"):WaitForChild("OnEquipBestPetsRequest"):InvokeServer()
+   end,
+})
