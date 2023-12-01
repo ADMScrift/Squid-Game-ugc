@@ -1,0 +1,369 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+local Window = OrionLib:MakeWindow({Name = "🦆DuckDuck Scripts🦆", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+ 
+local world1Tab = Window:MakeTab({
+	Name = "world 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+world1Tab:AddButton({
+	Name = "1 world / First Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-70.9052505493164, -108.58716583251953, -296.0491638183594) wait(0.3) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-78.31196594238281, -114.86018371582031, 442.143798828125)
+	end    
+})
+
+world1Tab:AddButton({
+	Name = "2 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-123.7677993774414, 39.753623962402344, 1535.49755859375) wait(0.3) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-343.31549072265625, 27.694683074951172, 2234.16259765625)
+	end    
+})
+
+world1Tab:AddButton({
+	Name = "3 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-540.9234619140625, 105.53043365478516, 3356.4189453125) wait(0.3) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(540.0570678710938, 18.85039520263672, 3437.266357421875)
+	end    
+})
+
+world1Tab:AddButton({
+	Name = "4 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-582.6709594726562, 72.72453308105469, 5574.43505859375) wait(0.3) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(591.2719116210938, 34.77378463745117, 6170.87255859375)
+	end    
+})
+
+world1Tab:AddButton({
+	Name = "5 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-520.7603759765625, 91.00695037841797, 7978.66015625) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(693.8193359375, 132.45387268066406, 8672.263671875)
+	end    
+})
+
+local world2Tab = Window:MakeTab({
+	Name = "World 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+world2Tab:AddButton({
+	Name = "2 world / First Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1375.1802978515625, 106.3517074584961, -392.0542907714844) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(2344.064208984375, 19.567157745361328, -603.4617309570312)
+	end    
+})
+
+world2Tab:AddButton({
+	Name = "2 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1388.1436767578125, 187.2305450439453, 1274.0849609375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1856.8631591796875, 243.1399383544922, 2570.853759765625)
+	end    
+})
+
+world2Tab:AddButton({
+	Name = "3 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1523.9381103515625, 90.54708099365234, 3314.68896484375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(2633.905517578125, 199.66197204589844, 3535.009033203125)
+	end    
+})
+
+world2Tab:AddButton({
+	Name = "4 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(2534.468994140625, -316.0766296386719, 8644.7490234375)
+	end    
+})
+
+world2Tab:AddButton({
+	Name = "5 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3518.0791015625, 90.41743469238281, 7455.83251953125) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4070.84814453125, 79.64891815185547, 8103.8359375)
+	end    
+})
+
+
+local world3Tab = Window:MakeTab({
+	Name = "world 3",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+world3Tab:AddButton({
+	Name = "3 world / First Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3511.850341796875, 95.4985122680664, -667.361572265625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4324.50390625, 236.55604553222656, -299.5199279785156)
+end    
+})
+
+world3Tab:AddButton({
+Name = "2 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4059.58837890625, -356.8565673828125, 1304.476806640625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3397.985107421875, -58.82146453857422, 1978.1002197265625)
+end    
+})
+
+world3Tab:AddButton({
+Name = "3 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3980.488037109375, 89.25343322753906, 3515.33447265625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3460.449462890625, 108.25332641601562, 4075.15478515625)
+end    
+})
+
+world3Tab:AddButton({
+Name = "4 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1508.679443359375, 88.67601013183594, 5304.68896484375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(2163.395263671875, 191.33250427246094, 6152.30517578125)
+end    
+})
+
+world3Tab:AddButton({
+Name = "5 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4104.08984375, 90.34620666503906, 5220.90234375) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4267.5517578125, 195.89793395996094, 6463.9423828125)
+end    
+})
+
+
+local world4Tab = Window:MakeTab({
+	Name = "world 4",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+world4Tab:AddButton({
+	Name = "4 Mundo / First Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(383.8952331542969, -11.602703094482422, -518.3179321289062) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(302.3161926269531, -39.201324462890625, 593.209228515625)
+end    
+})
+
+world4Tab:AddButton({
+Name = "2 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(284.3789978027344, 36.24155807495117, 2473.911865234375) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(80.54117584228516, 111.40293884277344, 2929.96923828125)
+end    
+})
+
+world4Tab:AddButton({
+Name = "3 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-243.60479736328125, 78.70364379882812, 5285.41943359375) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(335.30169677734375, 56.375213623046875, 6514.60205078125)
+end    
+})
+
+world4Tab:AddButton({
+Name = "4 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1997.37890625, -126.64494323730469, 5832.1748046875) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3658.45947265625, 0.2766532301902771, 5569.11181640625)
+end    
+})
+
+world4Tab:AddButton({
+Name = "5 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(5815.564453125, -90.59415435791016, 5851.) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(5730.22998046875, 194.8773956298828, 5313.69482421875)
+end    
+})
+
+
+local world5Tab = Window:MakeTab({
+	Name = "world 5",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+world5Tab:AddButton({
+	Name = "5 world / First Portal",
+	Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-558.7297973632812, 18.744367599487305, -364.9019470214844) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(704.4246215820312, 103.77449035644531, -603.0936279296875)
+end    
+})
+
+world5Tab:AddButton({
+Name = "2 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(858.9705810546875, 1288.996337890625, 3810.6552734375) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-1171.4842529296875, -483.9275207519531, 4009.377197265625)
+end    
+})
+
+world5Tab:AddButton({
+Name = "3 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-645.1110229492188, 60.53702163696289, 7406.23681640625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(238.2029266357422, 45.84182357788086, 7620.30859375)
+end    
+})
+
+world5Tab:AddButton({
+Name = "4 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3418.35107421875, -117.62458038330078, -800.58642578125) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4603.521484375, -165.96217346191406, -322.8153076171875)
+end    
+})
+
+world5Tab:AddButton({
+Name = "5 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(6589.52490234375, -565.1400756835938, -297.71771240234375) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1506.4730224609375, 92.37641906738281, 7338.11865234375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(7109.767578125, 91.1123046875, -192.7444610595703)
+end    
+})
+
+
+
+local world6Tab = Window:MakeTab({
+	Name = "world 6",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+world6Tab:AddButton({
+Name = "1 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-570.9851684570312, 74.63993072509766, -123.85992431640625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(419.6826477050781, 90.7584457397461, -546.50732421875)
+end    
+})
+
+world6Tab:AddButton({
+Name = "2 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(877.1388549804688, 589.917236328125, 3781.4931640625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(549.5789184570312, 1027.6224365234375, 4147.66015625)
+end    
+})
+
+world6Tab:AddButton({
+Name = "3 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-176.44810485839844, 104.23985290527344, 7241.33740234375) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-763.0863037109375, 253.11354064941406, 7351.6181640625)
+end    
+})
+
+world6Tab:AddButton({
+Name = "4 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4111.00048828125, -134.0689697265625, -752.7385864257812) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3698.918212890625, 104.22615051269531, -459.55419921875)
+end    
+})
+
+world6Tab:AddButton({
+Name = "5 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4480.54248046875, 268.6635437011719, 3250.746826171875) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(3243.05078125, 276.36053466796875, 4243.9990234375)
+end    
+})
+
+local world7Tab = Window:MakeTab({
+	Name = "world 7",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+world7Tab:AddButton({
+Name = "1 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1702.7784423828125, -24.799894332885742, -579.712890625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(2442.963134765625, 173.93508911132812, -149.01097106933594)
+end    
+})
+
+world7Tab:AddButton({
+Name = "2 Portal",
+Callback = function()
+	game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1512.2138671875, 170.56153869628906, 3326.77392578125) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1982.556396484375, 252.13006591796875, 5990.91064453125)
+end    
+})
+
+
+
+local world8Tab = Window:MakeTab({
+	Name = "world 8",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+world8Tab:AddButton({
+	Name = "1 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-275.89825439453125, -153.80503845214844, -527.5430908203125) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(315.0121765136719, -94.8075180053711, -538.2904052734375)
+	end    
+	})
+	
+	world8Tab:AddButton({
+	Name = "2 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-915.2183227539062, 32.555084228515625, 2245.795654296875) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-404.3909606933594, -11.755367279052734, 2772.479736328125)
+	end    
+	})
+	
+	world8Tab:AddButton({
+	Name = "3 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-664.9074096679688, -246.1364288330078, 4206.0517578125) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(461.68560791015625, -165.9967498779297, 4440.28955078125)
+	end    
+	})
+	
+	world8Tab:AddButton({
+	Name = "4 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1568.0455322265625, -259.2887878417969, 4098.89013671875) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1942.8040771484375, -288.4270324707031, 5204.07861328125)
+	end    
+	})
+	
+	world8Tab:AddButton({
+	Name = "5 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4018.0859375, -87.67850494384766, 4025.08837890625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(4562.94873046875, 223.2733154296875, 4490.748046875)
+	end    
+	})
+	
+
+	local world9Tab = Window:MakeTab({
+		Name = "world 9",
+		Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+	})
+	
+
+
+world8Tab:AddButton({
+	Name = "1 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-637.57861328125, -198.64236450195312, 431.6072692871094) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-421.2054443359375, 162.3319549560547, 126.40306854248047)
+	end    
+	})
+	
+	world8Tab:AddButton({
+	Name = "2 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(63.86675262451172, 376.49658203125, 1975.1741943359375) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(1031.645751953125, 291.33428955078125, 3478.39208984375)
+	end    
+	})
+	
+	world8Tab:AddButton({
+	Name = "3 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(-533.0722045898438, -198.11204528808594, 5886.83203125) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(76.29069519042969, 30.793556213378906, 6819.08740234375)
+	end    
+	})
+	
+	world8Tab:AddButton({
+	Name = "4 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(2825.0595703125, -136.3084716796875, 5713.5478515625) wait(0.4) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(79.42285919189453, 18.167448043823242, 6829.69921875)
+	end    
+	})
+	
+	world8Tab:AddButton({
+	Name = "5 Portal",
+	Callback = function()
+		game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(6235.578125, 192.46994018554688, 6507.5927734375) wait(0.5) game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame.new(6596.59228515625, 331.5552978515625, 5878.92431640625)
+	end    
+	})
+
+
+
+
+	
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMScrift/Testes/main/116"))()
