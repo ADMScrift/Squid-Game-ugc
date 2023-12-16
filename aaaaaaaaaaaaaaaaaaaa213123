@@ -1,0 +1,122 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local AutoTab = Window:MakeTab({
+	Name = "Auto",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local DesativarTab = Window:MakeTab({
+	Name = "Desativar",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Automatico"
+})
+
+AutoTab:AddButton({
+	Name = "AutoYumYums",
+	Callback = function()
+        _G.auto = true while true do wait(0.00000001) if _G.auto == true then local args = { [1] = "2bcd5453-e218-4c50-94b6-776cd1a3f8ee-9", [2] = 37 } game:GetService("ReplicatedStorage"):WaitForChild("NomnomHandler_CollectNomnom"):FireServer(unpack(args)) end end
+  	end    
+})
+DesativarTab:AddButton({
+	Name = "Desativar AutoYumYums",
+	Callback = function()
+        _G.auto = false
+  	end    
+})
+
+AutoTab:AddButton({
+	Name = "Pegar Automatico YumYums",
+	Callback = function()
+        _G.auto5 = true while true do wait(0.00000001) if _G.auto5 == true then game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(387.7014465332031, 9.723092079162598, -298.8591613769531) wait(0.1) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(384.5091857910156, 9.723090171813965, -298.7122497558594) wait(0.1) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(379.7973327636719, 9.723090171813965, -299.4169616699219) wait(0.1) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(374.8090515136719, 9.723090171813965, -301.0299377441406) wait(0.1) game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(368.4220275878906, 9.723090171813965, -301.40875244140625) end end
+  	end    
+})
+
+DesativarTab:AddButton({
+	Name = "Desativar Auto Pegar YumYums",
+	Callback = function()
+        _G.auto5 = false
+  	end    
+})
+
+AutoTab:AddButton({
+	Name = "Auto Pankecas",
+	Callback = function()
+        _G.auto1 = true while true do wait(0.00000001) if _G.auto1 == true then local args = { [1] = 1 } game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("PancakePurchaseEvent"):FireServer(unpack(args)) end end
+  	end    
+})
+DesativarTab:AddButton({
+	Name = "Desativar Auto Pankecas",
+	Callback = function()
+        _G.auto1 = false
+  	end    
+})
+
+AutoTab:AddButton({
+	Name = "Auto juntar Pankecas",
+	Callback = function()
+        _G.auto6 = true while true do wait(0.00000001) if _G.auto6 == true then local args = { [1] = "MergePancakes", [2] = workspace:WaitForChild("Plots"):WaitForChild("Plot5"):WaitForChild("IslandBase"):WaitForChild("MergeButton"):WaitForChild("Collider"):WaitForChild("ClientComponent_OnPlayerEnter"):WaitForChild("TargetObject") } game:GetService("ReplicatedStorage"):WaitForChild("TGSButtonCallbacks_ServerInvoke"):FireServer(unpack(args)) end end
+  	end    
+})
+
+DesativarTab:AddButton({
+	Name = "Desativar Auto juntar Pankecas",
+	Callback = function()
+        _G.auto6 = false
+  	end    
+})
+
+
+AutoTab:AddButton({
+	Name = "Tartaruga (Sem Risco)",
+	Callback = function()
+        _G.auto4 = true while true do wait(0.00000001) if _G.auto4 == true then local args = { [1] = "DepositNoRisk", [2] = workspace:WaitForChild("Plots"):WaitForChild("Plot2"):WaitForChild("IslandBase"):WaitForChild("DepositButton_Picnic"):WaitForChild("Collider"):WaitForChild("ClientComponent_OnPlayerEnter"):WaitForChild("TargetObject") } game:GetService("ReplicatedStorage"):WaitForChild("TGSButtonCallbacks_ServerInvoke"):FireServer(unpack(args)) end end
+  	end    
+})
+DesativarTab:AddButton({
+	Name = "Desativar Tartaruga",
+	Callback = function()
+        _G.auto4 = false
+  	end    
+})
+
+AutoTab:AddButton({
+	Name = "Coruja (Risco Medio)",
+	Callback = function()
+        _G.auto3 = true while true do wait(0.00000001) if _G.auto3 == true then local args = { [1] = "DepositMidRisk", [2] = workspace:WaitForChild("Plots"):WaitForChild("Plot2"):WaitForChild("IslandBase"):WaitForChild("DepositButton_Diner"):WaitForChild("Collider"):WaitForChild("ClientComponent_OnPlayerEnter"):WaitForChild("TargetObject") } game:GetService("ReplicatedStorage"):WaitForChild("TGSButtonCallbacks_ServerInvoke"):FireServer(unpack(args)) end end
+  	end    
+})
+
+DesativarTab:AddButton({
+	Name = "Desativar Coruja",
+	Callback = function()
+        _G.auto3 = false
+  	end    
+})
+
+AutoTab:AddButton({
+	Name = "Dragão (Risco Alto)",
+	Callback = function()
+        _G.auto2 = true while true do wait(0.00000001) if _G.auto2 == true then local args = { [1] = "DepositHighRisk", [2] = workspace:WaitForChild("Plots"):WaitForChild("Plot2"):WaitForChild("IslandBase"):WaitForChild("DepositButton_FineDiner"):WaitForChild("Collider"):WaitForChild("ClientComponent_OnPlayerEnter"):WaitForChild("TargetObject") } game:GetService("ReplicatedStorage"):WaitForChild("TGSButtonCallbacks_ServerInvoke"):FireServer(unpack(args)) end end
+  	end    
+})
+DesativarTab:AddButton({
+	Name = "Desativar Dragão",
+	Callback = function()
+        _G.auto2 = false
+  	end    
+})
+
+
+_G.auto4 = true
+
+while true do
+    wait(0.00000001)
+    if _G.auto4 == true then
+        local args = { [1] = "DepositNoRisk", [2] = workspace:WaitForChild("Plots"):WaitForChild("Plot2"):WaitForChild("IslandBase"):WaitForChild("DepositButton_Picnic"):WaitForChild("Collider"):WaitForChild("ClientComponent_OnPlayerEnter"):WaitForChild("TargetObject") } game:GetService("ReplicatedStorage"):WaitForChild("TGSButtonCallbacks_ServerInvoke"):FireServer(unpack(args))
+    end
+end
